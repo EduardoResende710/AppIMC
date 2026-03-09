@@ -45,7 +45,7 @@
             // 
             Alt.AutoSize = true;
             Alt.Font = new Font("Segoe UI", 18F);
-            Alt.Location = new Point(77, 86);
+            Alt.Location = new Point(59, 137);
             Alt.Name = "Alt";
             Alt.Size = new Size(77, 32);
             Alt.TabIndex = 0;
@@ -55,7 +55,7 @@
             // 
             Pes.AutoSize = true;
             Pes.Font = new Font("Segoe UI", 18F);
-            Pes.Location = new Point(77, 143);
+            Pes.Location = new Point(59, 194);
             Pes.Name = "Pes";
             Pes.Size = new Size(63, 32);
             Pes.TabIndex = 1;
@@ -63,27 +63,30 @@
             // 
             // lblresultado
             // 
-            lblresultado.AutoSize = true;
+            lblresultado.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lblresultado.Font = new Font("Segoe UI", 18F);
-            lblresultado.Location = new Point(62, 298);
+            lblresultado.Location = new Point(12, 399);
             lblresultado.Name = "lblresultado";
-            lblresultado.Size = new Size(0, 32);
+            lblresultado.Size = new Size(451, 32);
             lblresultado.TabIndex = 2;
+            lblresultado.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblClassif
             // 
-            lblClassif.AutoSize = true;
+            lblClassif.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lblClassif.Font = new Font("Segoe UI", 18F);
-            lblClassif.Location = new Point(62, 374);
+            lblClassif.Location = new Point(12, 475);
             lblClassif.Name = "lblClassif";
-            lblClassif.Size = new Size(0, 32);
+            lblClassif.Size = new Size(451, 32);
             lblClassif.TabIndex = 3;
+            lblClassif.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // numAltura
             // 
+            numAltura.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             numAltura.DecimalPlaces = 2;
             numAltura.Font = new Font("Segoe UI", 18F);
-            numAltura.Location = new Point(174, 84);
+            numAltura.Location = new Point(156, 135);
             numAltura.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numAltura.Name = "numAltura";
             numAltura.Size = new Size(181, 39);
@@ -92,9 +95,10 @@
             // 
             // numPeso
             // 
+            numPeso.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             numPeso.DecimalPlaces = 2;
             numPeso.Font = new Font("Segoe UI", 18F);
-            numPeso.Location = new Point(174, 143);
+            numPeso.Location = new Point(156, 194);
             numPeso.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numPeso.Name = "numPeso";
             numPeso.Size = new Size(181, 39);
@@ -102,9 +106,10 @@
             // 
             // M
             // 
+            M.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             M.AutoSize = true;
             M.Font = new Font("Segoe UI", 18F);
-            M.Location = new Point(398, 91);
+            M.Location = new Point(380, 142);
             M.Name = "M";
             M.Size = new Size(36, 32);
             M.TabIndex = 6;
@@ -112,9 +117,10 @@
             // 
             // Kg
             // 
+            Kg.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             Kg.AutoSize = true;
             Kg.Font = new Font("Segoe UI", 18F);
-            Kg.Location = new Point(398, 151);
+            Kg.Location = new Point(380, 202);
             Kg.Name = "Kg";
             Kg.Size = new Size(42, 32);
             Kg.TabIndex = 7;
@@ -122,11 +128,12 @@
             // 
             // Calcular
             // 
+            Calcular.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             Calcular.Enabled = false;
             Calcular.Font = new Font("Segoe UI", 18F);
-            Calcular.Location = new Point(127, 213);
+            Calcular.Location = new Point(110, 271);
             Calcular.Name = "Calcular";
-            Calcular.Size = new Size(266, 41);
+            Calcular.Size = new Size(266, 54);
             Calcular.TabIndex = 8;
             Calcular.Text = "Calcular";
             Calcular.UseVisualStyleBackColor = true;
@@ -136,7 +143,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(475, 450);
+            BackColor = Color.FromArgb(192, 255, 255);
+            ClientSize = new Size(475, 567);
             Controls.Add(Calcular);
             Controls.Add(Kg);
             Controls.Add(M);
@@ -146,7 +154,6 @@
             Controls.Add(lblresultado);
             Controls.Add(Pes);
             Controls.Add(Alt);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
