@@ -67,7 +67,7 @@
             lblresultado.Font = new Font("Segoe UI", 18F);
             lblresultado.Location = new Point(0, 298);
             lblresultado.Name = "lblresultado";
-            lblresultado.Size = new Size(474, 32);
+            lblresultado.Size = new Size(475, 32);
             lblresultado.TabIndex = 2;
             lblresultado.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -77,7 +77,7 @@
             lblClassif.Font = new Font("Segoe UI", 18F);
             lblClassif.Location = new Point(0, 373);
             lblClassif.Name = "lblClassif";
-            lblClassif.Size = new Size(474, 32);
+            lblClassif.Size = new Size(475, 32);
             lblClassif.TabIndex = 3;
             lblClassif.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -89,7 +89,7 @@
             numAltura.Location = new Point(174, 84);
             numAltura.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numAltura.Name = "numAltura";
-            numAltura.Size = new Size(181, 39);
+            numAltura.Size = new Size(182, 39);
             numAltura.TabIndex = 4;
             numAltura.ValueChanged += numAltura_ValueChanged;
             // 
@@ -101,7 +101,7 @@
             numPeso.Location = new Point(174, 143);
             numPeso.Maximum = new decimal(new int[] { 1000, 0, 0, 0 });
             numPeso.Name = "numPeso";
-            numPeso.Size = new Size(181, 39);
+            numPeso.Size = new Size(182, 39);
             numPeso.TabIndex = 5;
             // 
             // M
@@ -109,7 +109,7 @@
             M.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             M.AutoSize = true;
             M.Font = new Font("Segoe UI", 18F);
-            M.Location = new Point(398, 91);
+            M.Location = new Point(399, 91);
             M.Name = "M";
             M.Size = new Size(36, 32);
             M.TabIndex = 6;
@@ -120,7 +120,7 @@
             Kg.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             Kg.AutoSize = true;
             Kg.Font = new Font("Segoe UI", 18F);
-            Kg.Location = new Point(398, 151);
+            Kg.Location = new Point(399, 151);
             Kg.Name = "Kg";
             Kg.Size = new Size(42, 32);
             Kg.TabIndex = 7;
@@ -134,7 +134,7 @@
             Calcular.Font = new Font("Segoe UI", 18F);
             Calcular.Location = new Point(127, 213);
             Calcular.Name = "Calcular";
-            Calcular.Size = new Size(266, 41);
+            Calcular.Size = new Size(267, 41);
             Calcular.TabIndex = 8;
             Calcular.Text = "Calcular";
             Calcular.UseVisualStyleBackColor = false;
@@ -144,7 +144,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(475, 450);
+            ClientSize = new Size(476, 450);
             Controls.Add(Calcular);
             Controls.Add(Kg);
             Controls.Add(M);
@@ -157,6 +157,7 @@
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            FormClosing += Form1_FormClosing;
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)numAltura).EndInit();
             ((System.ComponentModel.ISupportInitialize)numPeso).EndInit();
