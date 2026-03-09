@@ -157,6 +157,7 @@
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            FormClosing += Form1_FormClosing;
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)numAltura).EndInit();
             ((System.ComponentModel.ISupportInitialize)numPeso).EndInit();
